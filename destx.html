@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	
+	<title>Antihero Skateboards</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=100">
+<link rel="stylesheet" href="49e0c14a.main.v2.css">
+
+	
+</head>
+	<body>
+
+
+			<section class="mobi">
+			<article><div><a href="#" class="taphover" data-file="http://www.youtube.com/embed/I7ALfsE-5nA"><img src="images/tn-fucktards.jpg" alt="Fucktards"> Fucktards</a></div></article>
+			<article><div><a href="#" class="taphover" data-file="http://www.youtube.com/embed/I7ALfsE-5nA"><img src="images/tn-cow.jpg" alt="Fucktards"> Untitled ("Cow Video")</a></div></article>
+			<article><div><a href="#" class="taphover" data-file="http://www.youtube.com/embed/I7ALfsE-5nA"><img src="images/tn-2song.jpg" alt="Fucktards"> 2 Song</a></div></article>
+			<article><div><a href="#" class="taphover" data-file="http://www.youtube.com/embed/I7ALfsE-5nA"><img src="images/tn-cmoney.jpg" alt="Fucktards"> Cash Money Vagrant</a></div></article>
+			<article><div><a href="#" class="taphover" data-file="http://www.youtube.com/embed/I7ALfsE-5nA"><img src="images/tn-tentcity.jpg" alt="Fucktards"> Tent City</a></div></article>
+			<article><div><a href="#" class="taphover" data-file="http://www.youtube.com/embed/I7ALfsE-5nA"><img src="images/tn-destination.jpg" alt="Fucktards"> Destination Unknown</a></div></article>
+			</section>
+			
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		
+		<script>
+		
+		$(document).ready(function() {
+		
+			$('a.taphover').on("touchstart", function (e) {
+    			"use strict"; 
+    			var link = $(this);
+    			if (link.hasClass('hover')) {
+       			 return true;
+    		} else {
+        		link.addClass("hover");
+       		 $('a.taphover').not(this).removeClass("hover");
+        		e.preventDefault();
+        	return false;
+    		}
+		});
+		
+		
+		$('article a').on('click', function() {
+			getVid( $(this).attr('data-file') ); 
+			});
+			
+		function getVid(fileName) {
+		
+			window.location.href = fileName;
+			
+			}
+		
+		});
+		
+		
+		
+		</script>
+
+</body>
+</html>
+
